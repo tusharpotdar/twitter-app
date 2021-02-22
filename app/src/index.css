@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply cursor-pointer self-center py-1 rounded-xl font-bold text-blue-400 text-2xl
+}
+
+.btn-active {
+  @apply text-white bg-blue-400 border-transparent w-36 text-center
+}
+
+.main-container {
+  @apply container mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 divide-x
+}
+
+.list-container {
+  @apply flex flex-col col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-2 divide-y py-10 h-screen
+}
