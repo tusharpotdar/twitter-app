@@ -6,7 +6,7 @@ const Tweet = (props) => {
   return (
     <div className="flex flex-row gap-4 px-8 py-6 justify-items-stretch w-full break-words break-all bg-gray-50 hover:bg-gray-100 ">
       <img
-        className="rounded-full self-start h-14 w-14"
+        className="rounded-full self-start h-14 w-16"
         src={displayPicture}
         alt="Display Picture"
       />
