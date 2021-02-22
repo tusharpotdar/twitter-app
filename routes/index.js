@@ -18,9 +18,8 @@ router.get("/trends", function (req, res, next) {
 			res.json(trends);
 		})
 		.catch((err) => {
-			res.sendStatus(400).send({
-				error: "error",
-			});
+			res.status(err.statusCode);
+			res.json(JSON.parse(err.error));
 		});
 });
 
